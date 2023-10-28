@@ -1,0 +1,6 @@
+@media (max-width: 768px) {
+  .sobreMim {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}

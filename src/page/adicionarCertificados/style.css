@@ -1,0 +1,35 @@
+:root {
+  font-size: 16px; /* Defina a unidade base de fonte, se ainda não o fez */
+}
+
+.container {
+  background-color: rgba(0, 0, 0, 0.804);
+  margin: 3.125rem 6.25rem 1.875rem 6.25rem; /* Margens convertidas para rem */
+  border-radius: 0.625rem; /* 10px convertidos para rem */
+}
+
+.container form {
+  display: flex;
+  height: 43.75rem; /* 70vh convertidos para rem */
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  gap: 1.25rem; /* 2px convertidos para rem */
+}
+
+.container input {
+  background-color: #e4e4e4;
+  border: none;
+  border-radius: 0.3125rem; /* 5px convertidos para rem */
+  text-align: center;
+  padding: 0.625rem 4rem 0.625rem 4rem; /* Preenchimento convertido para rem */
+}
+
+button.inserir {
+  background-color: #1e3249;
+  border: none;
+  border-radius: 0.1875rem; /* 3px convertidos para rem */
+  padding: 0.5rem; /* 8px convertidos para rem */
+  color: white;
+}

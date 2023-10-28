@@ -1,0 +1,35 @@
+:root {
+  font-size: 16px; /* Defina a unidade base de fonte, se ainda não o fez */
+}
+
+.texto {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  color: rgb(255, 255, 255);
+  padding: 2rem; /* Alterado para 32px */
+  border-radius: 0.0625rem; /* Alterado para 1px */
+  animation: scale-up-ver-center 0.8s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+}
+
+  @keyframes scale-up-ver-center {
+    0% {
+      transform: scaleY(0.4);
+    }
+    100% {
+      transform: scaleY(1);
+    }
+  }
+
+  .formacao{
+    margin-top: 3rem;
+  }
+
+  .resumo{
+    margin-top: 1rem;
+  }
+
+  .habilidades{
+    margin-top: 3rem;
+  }

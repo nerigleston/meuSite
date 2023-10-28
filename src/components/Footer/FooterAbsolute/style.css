@@ -1,0 +1,47 @@
+.rodapeA {
+  background-color: rgb(0, 0, 0);
+  display: flex;
+  justify-content: center;
+  padding: 2rem;
+  text-align: center;
+  align-items: center;
+  gap: 5rem;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  position: absolute;
+}
+
+@media screen and (min-width: 2559px){
+  .rodapeA img {
+    width: 200%;
+    gap: 8rem;
+  }
+}
+.rodape a {
+  color: #fff;
+  font-size: 1.2rem;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.rodape a:hover {
+  color: #a4a4a4;
+}
+
+.under{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+
+@media screen and (max-width: 767px) {
+  .rodapeA{
+    position: static;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  /* Estilos para tablets */
+}

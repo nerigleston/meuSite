@@ -1,0 +1,32 @@
+:root {
+  font-size: 16px; /* Defina a unidade base de fonte, se ainda não o fez */
+}
+
+.atividades {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  height: 70vh;
+  align-items: center;
+  color: rgb(255, 255, 255);
+  padding: 2rem; /* 32px convertidos para rem */
+  border-radius: 0.0625rem; /* 1px convertido para rem */
+  animation: scale-up-ver-center 0.8s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+}
+
+.atividades p {
+  top: 3.75rem; /* 60px convertidos para rem */
+  left: 0;
+  right: 0;
+  z-index: 1;
+}
+
+@media screen and (max-width: 768px) {
+  .atividades{
+    height: auto;
+  }
+}
+
+
+
