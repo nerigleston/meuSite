@@ -11,7 +11,7 @@ ReactDOM.render(
     <BrowserRouter>
         <div>
             <Routes>
-                <Route path="/" element={<Home />} />
+                <Route exact path="/" element={<Home />} />
                 <Route path="/certificados" element={<Certificados />} />
                 <Route path="/extracurricular" element={<AtividadeExtracurricular />} />
                 <Route path="/projetos" element={<MeusProjetos />} />
