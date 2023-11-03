@@ -8,7 +8,7 @@ import AtividadeExtracurricular from '../page/atividadesExtracurricular';
 import MeusProjetos from '../page/meusProjetos/github';
 
 ReactDOM.render(
-    <BrowserRouter history={history}>
+    <BrowserRouter>
         <div>
             <Routes>
                 <Route path="/" element={<Home />} />
@@ -18,5 +18,5 @@ ReactDOM.render(
             </Routes>
         </div>
     </BrowserRouter>,
-    document.getElementById('root'),
+    document.getElementById('root')
 );

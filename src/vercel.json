@@ -1,0 +1,24 @@
+{
+  "redirects": [
+    {
+      "source": "/",
+      "destination": "/home",
+      "statusCode": 301
+    },
+    {
+      "source": "/certificados",
+      "destination": "/certificados",
+      "statusCode": 301
+    },
+    {
+      "source": "/extracurricular",
+      "destination": "/extracurriculares",
+      "statusCode": 301
+    },
+    {
+      "source": "/projetos",
+      "destination": "/projetos",
+      "statusCode": 301
+    }
+  ]
+}
