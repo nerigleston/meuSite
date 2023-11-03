@@ -66,3 +66,9 @@ a {
 ::-webkit-scrollbar-track {
   background-color: #424242;
 }
+
+@media screen and (max-width: 767px) {
+  body{
+    background-image: url(./assets/Screenshot_20231103-172827.webp);
+  }
+}
