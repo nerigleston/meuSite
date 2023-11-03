@@ -1,6 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import './../style.css';
 import Home from '../page/home';
 import Certificados from '../page/certificados';
 import AtividadeExtracurricular from '../page/atividadesExtracurricular';
@@ -19,4 +20,8 @@ function Rotas() {
     );
 }
 
-export default Rotas
+ReactDOM.createRoot(document.getElementById('root')).render(
+    <React.StrictMode>
+        <Rotas />
+    </React.StrictMode>
+);
