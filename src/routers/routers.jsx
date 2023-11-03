@@ -10,10 +10,10 @@ import MeusProjetos from '../page/meusProjetos/github';
 const Rotas = () => (
     <BrowserRouter>
         <Routes>
-            <Route path='/' element={<Home />} />
-            <Route path='/certificados' element={<Certificados />} />
-            <Route path='/extracurricular' element={<AtividadeExtracurricular />} />
-            <Route path='/projetos' element={<MeusProjetos />} />
+            <Route exact path='/' element={<Home />} />
+            <Route exact path='/certificados' element={<Certificados />} />
+            <Route exact path='/extracurricular' element={<AtividadeExtracurricular />} />
+            <Route exact path='/projetos' element={<MeusProjetos />} />
             {/* <Route path='/estatisticas' element={<Estatisticas />} /> */}
         </Routes>
     </BrowserRouter>
