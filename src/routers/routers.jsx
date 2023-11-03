@@ -7,21 +7,16 @@ import Certificados from '../page/certificados';
 import AtividadeExtracurricular from '../page/atividadesExtracurricular';
 import MeusProjetos from '../page/meusProjetos/github';
 
-function Rotas() {
-    return (
-        <BrowserRouter>
+ReactDOM.render(
+    <BrowserRouter history={history}>
+        <div>
             <Routes>
                 <Route path="/" element={<Home />} />
                 <Route path="/certificados" element={<Certificados />} />
                 <Route path="/extracurricular" element={<AtividadeExtracurricular />} />
                 <Route path="/projetos" element={<MeusProjetos />} />
             </Routes>
-        </BrowserRouter>
-    );
-}
-
-ReactDOM.createRoot(document.getElementById('root')).render(
-    <React.StrictMode>
-        <Rotas />
-    </React.StrictMode>
+        </div>
+    </BrowserRouter>,
+    document.getElementById('root'),
 );
