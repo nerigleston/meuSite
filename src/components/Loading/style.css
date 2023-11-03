@@ -18,6 +18,16 @@
 
   100% {
     transform: rotate(360deg);
-    /* Gira 360 graus */
   }
 }
+
+@media screen and (max-width: 767px) {
+  .progress-circle {
+    margin: 10rem 0 10rem 0;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .progress-circle {
+    margin: 20rem 0 20rem 0;
+  }}
