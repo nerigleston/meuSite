@@ -23,11 +23,11 @@
 
 @media screen and (max-width: 767px) {
   .progress-circle {
-    margin: 10rem 0 10rem 0;
+    margin: 15rem 0 15rem 0;
   }
 }
 
 @media screen and (min-width: 768px) and (max-width: 1024px) {
   .progress-circle {
-    margin: 20rem 0 20rem 0;
+    margin: 25rem 0 25rem 0;
   }}
