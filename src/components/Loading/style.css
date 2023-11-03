@@ -1,0 +1,23 @@
+/* CSS para a animação de progresso circular */
+.progress-circle {
+  margin: 10rem 0 7rem 0 ;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: 4px solid transparent;
+  border-top: 4px solid #007bff;
+  /* Cor do indicador de progresso */
+  animation: spin 2s linear infinite;
+  /* Duração da animação e repetição infinita */
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+    /* Gira 360 graus */
+  }
+}
