@@ -3,7 +3,7 @@ import ProgressCircle from "../Loading";
 
 function APICertificados() {
   const [certificados, setCertificados] = useState([]);
-  const [isLoading, setIsLoading] = useState(true);
+  const [Loading, setLoading] = useState(true);
 
   useEffect(() => {
     async function fetchCertificados() {
@@ -11,10 +11,10 @@ function APICertificados() {
         const response = await fetch("https://meuportifolioapi-production.up.railway.app/certificados");
         const data = await response.json();
         setCertificados(data);
-        setIsLoading(false);
+        setLoading(false);
       } catch (error) {
         console.error("Erro ao buscar certificados:", error);
-        setIsLoading(false);
+        setLoading(false);
       }
     }
 
@@ -27,9 +27,9 @@ function APICertificados() {
         <a href="https://drive.google.com/drive/u/0/folders/1MKkxyxwFR228bzpK1vIx8Cj8EJt2cj"><h1>Meus Certificados</h1></a>
       </div>
       <div className="certificados">
-        {isLoading ? (
+        {Loading ? (
           <div className="loading">
-            <ProgressCircle /> {/* Use o componente ProgressCircle para o indicador de carregamento */}
+            <ProgressCircle />
           </div>
         ) : (
           certificados.map((certificado, index) => (
