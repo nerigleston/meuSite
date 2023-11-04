@@ -11,20 +11,20 @@ import FooterStatic from '../../components/Footer/FooterStatic'
 function Home() {
   return (
     <>
-      <Header />
-      <div className='texto'>
-        <MeuNome />
-        <div className='resumo'>
-          <SobreMim />
+        <Header />
+        <div className='texto'>
+          <MeuNome />
+          <div className='resumo'>
+            <SobreMim />
+          </div>
+          <div className='formacao'>
+            <FormacaoAcademica />
+          </div>
+          <div className='habilidades'>
+            <Habilidades />
+          </div>
         </div>
-        <div className='formacao'>
-          <FormacaoAcademica />
-        </div>
-        <div className='habilidades'>
-          <Habilidades />
-        </div>
-      </div>
-      <FooterStatic />
+        <FooterStatic />
     </>
   )
 }
