@@ -10,7 +10,6 @@ function Header() {
           <a className="certificados" href="/certificados">Certificados</a>
           <a className="atividade" href="/extracurricular">Atividade Extracurricular</a>
           <a className="projetos" href="/projetos">GitHub</a>
-          {/* <a className="stats" href="/estatisticas">Estatisticas</a> */}
         </div>
       </header>
     </>

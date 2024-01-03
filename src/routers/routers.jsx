@@ -5,16 +5,19 @@ import './../style.css';
 import Home from '../page/home';
 import Certificados from '../page/certificados';
 import AtividadeExtracurricular from '../page/atividadesExtracurricular';
-import MeusProjetos from '../page/meusProjetos/github'; // Import the MeusProjetos component
+import MeusProjetos from '../page/meusProjetos/github';
 
-ReactDOM.render(
-    <BrowserRouter>
-        <Routes>
-            <Route exact path="/" element={<Home />} />
-            <Route path="/certificados" element={<Certificados />} />
-            <Route path="/extracurricular" element={<AtividadeExtracurricular />} />
-            <Route path="/projetos" element={<MeusProjetos />} /> // Update the route to point to the MeusProjetos component
-        </Routes>
-    </BrowserRouter>,
-    document.getElementById('root')
-);
+export default function Routers() {
+    return (
+        <BrowserRouter>
+            <Routes>
+                <Route>
+                    <Route exact path="/" element={<Home />} />
+                    <Route path="/certificados" element={<Certificados />} />
+                    <Route path="/extracurricular" element={<AtividadeExtracurricular />} />
+                    <Route path="/projetos" element={<MeusProjetos />} />
+                </Route>
+            </Routes>
+        </BrowserRouter>
+    );
+}
