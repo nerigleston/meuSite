@@ -82,6 +82,27 @@
   }
 }
 
+.pagination {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin-top: 20px;
+  align-items: center;
+  text-align: center;
+}
+
+.pagination span {
+  cursor: pointer;
+  padding: 8px;
+  margin: 0 5px;
+  background-color: #000000;
+  border-radius: 4px;
+}
+
+.pagination span:hover {
+  background-color: #bbb;
+}
+
 @media screen and (min-width: 2559px) {
   .certificados img {
     height: 29.296875rem;

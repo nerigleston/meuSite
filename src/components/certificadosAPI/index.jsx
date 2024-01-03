@@ -4,6 +4,8 @@ import ProgressCircle from "../Loading";
 function APICertificados() {
   const [certificados, setCertificados] = useState([]);
   const [Loading, setLoading] = useState(true);
+  const [currentPage, setCurrentPage] = useState(1);
+  const certificatesPerPage = 10;
 
   useEffect(() => {
     async function fetchCertificados() {
@@ -21,6 +23,12 @@ function APICertificados() {
     fetchCertificados();
   }, []);
 
+  const indexOfLastCertificate = currentPage * certificatesPerPage;
+  const indexOfFirstCertificate = indexOfLastCertificate - certificatesPerPage;
+  const currentCertificates = certificados.slice(indexOfFirstCertificate, indexOfLastCertificate);
+
+  const paginate = (pageNumber) => setCurrentPage(pageNumber);
+
   return (
     <>
       <div className="nome">
@@ -32,7 +40,7 @@ function APICertificados() {
             <ProgressCircle />
           </div>
         ) : (
-          certificados.map((certificado, index) => (
+          currentCertificates.map((certificado, index) => (
             <div key={index}>
               <div className="background">
                 <img src={certificado.certificadoimg} alt={`Certificado ${certificado.curso}`} />
@@ -44,6 +52,19 @@ function APICertificados() {
             </div>
           ))
         )}
+        {/* Pagination */}
+      </div>
+      <div className="pagination">
+        <div className="page">
+          <p>Páginas</p>
+        </div>
+        <div>
+          {[...Array(Math.ceil(certificados.length / certificatesPerPage)).keys()].map((pageNumber) => (
+            <span key={pageNumber + 1} onClick={() => paginate(pageNumber + 1)}>
+              {pageNumber + 1}
+            </span>
+          ))}
+        </div>
       </div>
     </>
   );
